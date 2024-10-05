@@ -42,3 +42,51 @@ design and impactful online experiences.
 * **2014:** HTML5 is finalized (video, audio, canvas, semantic elements).
 * **Ongoing:** HTML5 evolves with new APIs and features for a modern web.
 
+ # What is a tag?
+
+A tag is a special keyword enclosed in angle brackets (`<` and `>`). These tags are the fundamental building blocks of HTML, telling the web browser how to structure and display the content of a web page.
+
+# Common HTML Tags
+
+* **`<!DOCTYPE html>`:** Declares the document type and version of HTML.
+* **`<html>`:** Root element of the page.
+* **`<head>`:** Contains meta-information about the page (title, links to CSS).
+* **`<title>`:** Sets the title that appears in the browser tab.
+* **`<body>`:** Contains the visible content of the page.
+* **`<h1>` to `<h6>`:**  Headings (h1 being the most important).
+* **`<p>`:** Paragraphs of text.
+* **`<br>`:** Line break (forces a line break within a paragraph).
+* **`<pre>`:** Displays preformatted text, preserving spaces and line breaks.
+* **`<blockquote>`:** Indicates a quotation.
+* **`<q>`:** For shorter, inline quotations.
+* **`<a>`:** Creates hyperlinks.
+* **`<header>`:** Defines a header section.
+* **`<nav>`:** Defines a navigation menu.
+* **`<main>`:** Specifies the main content of a page.
+* **`<article>`:** Represents a self-contained piece of content.
+* **`<aside>`:** Defines content related to the main content (sidebar).
+* **`<footer>`:** Defines a footer for a document or section.
+* **`<form>`:** Creates an HTML form for user input.
+* **`<input>`:** Various types of input fields (text, password, submit, etc.).
+* **`<label>`:** Provides a label for an input field.
+* **`<textarea>`:** A multi-line text input area.
+* **`<button>`:** A clickable button (can be used for submitting forms).
+* **`<select>`:** Creates a dropdown list.
+* **`<option>`:** Defines an option within a `<select>` element.
+* **`<table>`:** Defines a table.
+* **`<tr>`:** Table row.
+* **`<td>`:** Table cell.
+* **`<th>`:** Table header cell.
+* **`<div>`:** A generic container for grouping elements (often used with CSS).
+* **`<span>`:** Used to group inline elements (often for applying CSS styles).
+* **`<strong>`:** Defines important text (bold by default).
+* **`<em>`:** Emphasized text (italic by default).
+* **`<b>`:** Bold text.
+* **`<i>`:** Italic text.
+* **`<u>`:** Underlined text.
+* **`<mark>`:** Marked/highlighted text.
+* **`<small>`:** Smaller text.
+* **`<del>`:** Deleted text (usually displayed with a strikethrough).
+* **`<ins>`:** Inserted text (usually underlined).
+* **`<sub>`:** Subscript text.
+* **`<sup>`:** Superscript text. 
