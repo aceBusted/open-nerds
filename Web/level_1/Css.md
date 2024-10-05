@@ -289,6 +289,6 @@ There are four main types of combinators:
     <li>List item 2</li>
   </ul>
   <p>Paragraph 2</p>
-</div>
+</div> 
 
 
