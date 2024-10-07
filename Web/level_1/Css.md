@@ -290,5 +290,360 @@ There are four main types of combinators:
   </ul>
   <p>Paragraph 2</p>
 </div> 
+```
+## CSS funtions 
+# CSS Functions
+
+CSS functions are powerful tools that allow you to dynamically calculate values within your stylesheets. They provide flexibility and control over various aspects of styling, from colors and shapes to filters and transforms.
+
+## Color Functions
+
+*   **`rgb()` and `rgba()`:** Define colors using red, green, and blue values, with an optional alpha channel for transparency in `rgba()`.
+
+    ```css
+    color: rgb(255, 0, 0); /* Red */
+    background-color: rgba(0, 0, 255, 0.5); /* Blue with 50% transparency */
+    ```
+
+*   **`hsl()` and `hsla()`:** Define colors using hue, saturation, and lightness values, with an optional alpha channel in `hsla()`.
+
+    ```css
+    color: hsl(120, 100%, 50%); /* Green */
+    border-color: hsla(240, 70%, 60%, 0.8); /* Purple with 80% transparency */
+    ```
+
+## Filter Functions
+
+These functions create visual effects on elements, like blurring, grayscale, and shadows.
+
+*   **`blur()`:** Blurs the element.
+
+    ```css
+    filter: blur(5px);
+    ```
+
+*   **`brightness()`:** Adjusts the brightness.
+
+    ```css
+    filter: brightness(1.5); /* 150% brighter */
+    ```
+
+*   **`contrast()`:** Adjusts the contrast.
+
+    ```css
+    filter: contrast(0.8); /* 80% contrast */
+    ```
+
+*   **`drop-shadow()`:** Adds a drop shadow.
+
+    ```css
+    filter: drop-shadow(10px 10px 5px gray);
+    ```
+
+*   **`grayscale()`:** Converts to grayscale.
+
+    ```css
+    filter: grayscale(1); /* Fully grayscale */
+    ```
+
+*   **`hue-rotate()`:** Rotates the hue.
+
+    ```css
+    filter: hue-rotate(90deg);
+    ```
+
+*   **`invert()`:** Inverts the colors.
+
+    ```css
+    filter: invert(1); /* Fully inverted */
+    ```
+
+*   **`opacity()`:** Adjusts the opacity.
+
+    ```css
+    filter: opacity(0.7); /* 70% opacity */
+    ```
+
+*   **`saturate()`:** Adjusts the saturation.
+
+    ```css
+    filter: saturate(2); /* 200% saturation */
+    ```
+
+*   **`sepia()`:** Applies a sepia tone.
+
+    ```css
+    filter: sepia(1); /* Fully sepia */
+    ```
+
+## Transform Functions
+
+These functions manipulate the position, size, and rotation of elements.
+
+*   **`translate()`:** Moves the element horizontally and/or vertically.
+
+    ```css
+    transform: translate(50px, 100px);
+    ```
+
+*   **`scale()`:** Resizes the element.
+
+    ```css
+    transform: scale(1.5); /* 150% of the original size */
+    ```
+
+*   **`rotate()`:** Rotates the element.
+
+    ```css
+    transform: rotate(45deg);
+    ```
+
+*   **`skew()`:** Skews the element along the X and/or Y axis.
+
+    ```css
+    transform: skew(20deg, 10deg);
+    ```
+
+*   **`matrix()`:** A more complex function for 2D transformations.
+
+## Shape Functions
+
+These functions define shapes for clipping or creating image masks.
+
+*   **`circle()`:** Creates a circular shape.
+
+    ```css
+    clip-path: circle(50% at 50% 50%);
+    ```
+
+*   **`ellipse()`:** Creates an elliptical shape.
+
+    ```css
+    shape-outside: ellipse(50% 50% at 50% 50%);
+    ```
+
+*   **`inset()`:** Creates a rectangular shape with optional rounded corners.
+
+    ```css
+    clip-path: inset(10px 20px 30px 40px round 10px);
+    ```
+
+*   **`polygon()`:** Creates a polygon with any number of sides.
+
+    ```css
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    ```
+
+## Other Functions
+
+*   **`calc()`:** Performs calculations within your CSS.
+
+    ```css
+    width: calc(100% - 20px);
+    ```
+
+*   **`var()`:** Accesses CSS variables.
+
+    ```css
+    color: var(--main-color);
+    ```
+
+*   **`url()`:** Links to external resources like images or fonts.
+
+    ```css
+    background-image: url("image.jpg");
+    ```
+
+*   **`attr()`:** Retrieves attribute values from HTML elements (limited support).
 
 
+# Layout cookbook 
+# CSS Layout Cookbook
+
+This cookbook provides recipes for common layout patterns, elements you might want to include on your own websites. These recipes offer code examples to use as a starting point and demonstrate different ways to use layout specifications.
+
+## Recipes
+
+| Recipe | Description | Layout Methods |
+|---|---|---| 
+| Media Objects | A two-column box with an image on one side and text on the other (e.g., a Facebook post). | CSS grid, float fallback, `fit-content` sizing |
+| Columns | Choosing between multi-column layout, flexbox, or grid for columns. | CSS grid, Multicol, Flexbox |
+| Center an Element | How to center an item horizontally and vertically. | Flexbox, Box Alignment |
+| Sticky Footers | A footer that sticks to the bottom of the container or viewport, even with minimal content. | CSS grid, Flexbox |
+| Split Navigation | A navigation pattern where some links are visually separated. | Flexbox, margin |
+| Breadcrumb Navigation | A list of links to navigate back up through the page hierarchy. | Flexbox |
+| List Group with Badges | A list of items with badges to display a count. | Flexbox, Box Alignment |
+| Pagination | Links to pages of content (e.g., search results). | Flexbox, Box Alignment |
+| Card | A card component, often used in a grid of cards. | Grid Layout |
+| Grid Wrapper | Aligning grid content within a central wrapper, allowing items to break out. | CSS grid |
+
+
+## Contribute a Recipe
+
+We encourage you to contribute a recipe in the same format!  See the guidelines for adding Layout Cookbook recipes for a template and instructions.
+
+
+## Full HTML and CSS Code Which helps you to understand how things work under the hood .
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Examples</title>
+    <style>
+        /* 1. Changing Text Color */
+        .text-color-example {
+            color: red;
+        }
+
+        /* 2. Background Color */
+        .background-color-example {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        /* 3. Borders */
+        .border-example {
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        /* 4. Text Alignment */
+        .text-alignment-example {
+            text-align: center;
+        }
+
+        /* 5. Hover Effect */
+        .hover-effect-example {
+            background-color: lightgray;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .hover-effect-example:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* 6. Rounded Corners */
+        .rounded-corners-example {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        /* 7. Box Shadow */
+        .box-shadow-example {
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 8. Flexbox Layout */
+        .flexbox-example {
+            display: flex;
+            gap: 10px;
+        }
+        .box {
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        /* 9. Animation */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+        .animation-example {
+            animation: slide 3s infinite;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+
+        /* 10. Gradient Background */
+        .gradient-background-example {
+            padding: 20px;
+            background: linear-gradient(to right, red, yellow);
+            color: white;
+        }
+
+        /* General styling for containers */
+        .example-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Examples</h1>
+
+    <!-- 1. Changing Text Color -->
+    <div class="example-container text-color-example">
+        <h2>1. Changing Text Color</h2>
+        <p>This text is red!</p>
+    </div>
+
+    <!-- 2. Background Color -->
+    <div class="example-container background-color-example">
+        <h2>2. Background Color</h2>
+        <p>This div has a yellow background.</p>
+    </div>
+
+    <!-- 3. Borders -->
+    <div class="example-container border-example">
+        <h2>3. Borders</h2>
+        <p>This div has a solid border.</p>
+    </div>
+
+    <!-- 4. Text Alignment -->
+    <div class="example-container text-alignment-example">
+        <h2>4. Text Alignment</h2>
+        <p>This text is centered.</p>
+    </div>
+
+    <!-- 5. Hover Effect -->
+    <div class="example-container">
+        <h2>5. Hover Effect</h2>
+        <button class="hover-effect-example">Hover over me!</button>
+    </div>
+
+    <!-- 6. Rounded Corners -->
+    <div class="example-container rounded-corners-example">
+        <h2>6. Rounded Corners</h2>
+        <p>This div has rounded corners.</p>
+    </div>
+
+    <!-- 7. Box Shadow -->
+    <div class="example-container box-shadow-example">
+        <h2>7. Box Shadow</h2>
+        <p>This box has a shadow.</p>
+    </div>
+
+    <!-- 8. Flexbox Layout -->
+    <div class="example-container">
+        <h2>8. Flexbox Layout</h2>
+        <div class="flexbox-example">
+            <div class="box">Item 1</div>
+            <div class="box">Item 2</div>
+            <div class="box">Item 3</div>
+        </div>
+    </div>
+
+    <!-- 9. Animation -->
+    <div class="example-container animation-example">
+        <h2>9. Animation</h2>
+        <p>Watch me move!</p>
+    </div>
+
+    <!-- 10. Gradient Background -->
+    <div class="example-container gradient-background-example">
+        <h2>10. Gradient Background</h2>
+        <p>This div has a gradient background.</p>
+    </div>
+</body>
+</html>
+```
+# Assignment of for the css 
